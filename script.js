@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 function getWeather() {
-    const apiKey = "5b1144929b9604bfdbbe487f80919fbb"; // Openweather API key
+    const apiKey = process.env.OPENWEATHER_API_KEY; // Get API key from environment variables
     const city = "Amsterdam"; // Nearest major local city
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
