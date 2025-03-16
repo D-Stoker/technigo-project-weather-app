@@ -20,7 +20,21 @@
     <p>Sunset: <span id="sunset"></span></p>
   </section>
 
+  <h2>5-Day Forecast</h2>
+  <section id="forecast-container">
+    <ul>
+      <li id="forecast-day-1"></li>
+      <li id="forecast-day-2"></li>
+      <li id="forecast-day-3"></li>
+      <li id="forecast-day-4"></li>
+      <li id="forecast-day-5"></li>
+    </ul>
+  </section>
+
   <script src="script.js"></script>
+  <script>
+    window.onload = getWeather;  // This ensures the function is called when the page loads
+  </script>
 </body>
 
 </html>
